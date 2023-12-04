@@ -1,0 +1,8 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "dependencies": {
+    "@packages/shared": "*",
+    "@packages/build-config": "*"
+  }
+}

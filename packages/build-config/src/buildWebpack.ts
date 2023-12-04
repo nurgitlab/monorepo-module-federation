@@ -19,7 +19,7 @@ export function buildWebpack (options: BuildOptions): webpack.Configuration {
         entry: paths.entry,
         output: {
             path: paths.output,
-            filename: 'build-[contenthash].js',
+            filename: 'src-[contenthash].js',
             clean: true,
         },
         module: {

@@ -55,7 +55,8 @@ export function buildLoaders (options: BuildOptions): ModuleOptions['rules'] {
                 getCustomTransformers: () => ({
                     before: [isDev && ReactRefreshTypeScript()].filter(Boolean),
                 }),
-                transpileOnly: isDev,
+                transpileOnly: true
+                // transpileOnly: isDev,
             },
         },
         exclude: /node_modules/,
@@ -71,5 +72,5 @@ export function buildLoaders (options: BuildOptions): ModuleOptions['rules'] {
         exclude: /node_modules/
     };
 
-    return [fileLoader, cssLoader, svgLoader, esbuildLoader]
+    return [fileLoader, cssLoader, svgLoader, tsLoader]
 }
