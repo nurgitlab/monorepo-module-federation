@@ -5,7 +5,7 @@ export const App = () => {
         <div className={"main"}>
             <h1>ADMIN.TSX</h1>
 
-            <Link to={'/about'}>About</Link>
+            <Link to={'/admin/about'}>About</Link>
 
             <Outlet/>
         </div>

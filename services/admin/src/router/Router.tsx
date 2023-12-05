@@ -9,7 +9,7 @@ const routes = [
         element: <App/>,
         children: [
             {
-                path: '/About',
+                path: '/admin/about',
                 element: <Suspense fallback={'Loading...'}><About/></Suspense>
             }
         ]

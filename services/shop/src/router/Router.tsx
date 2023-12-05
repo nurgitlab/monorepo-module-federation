@@ -5,12 +5,16 @@ import {Shop} from "@/pages/Shop";
 
 const routes = [
     {
-        path: "/",
+        path: "/shop",
         element: <App/>,
         children: [
             {
-                path: '/shop',
+                path: '/shop/main',
                 element: <Suspense fallback={'Loading...'}><Shop/></Suspense>
+            },
+            {
+                path: '/shop/second',
+                element: <Suspense fallback={'Loading...'}><div style={{color: 'green'}}>SBOL.Маркет.</div></Suspense>
             }
         ]
     },
