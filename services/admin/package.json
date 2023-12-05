@@ -1,5 +1,5 @@
 {
-  "name": "host",
+  "name": "admin",
   "version": "1.0.0",
   "dependencies": {
     "@packages/shared": "*",
@@ -42,7 +42,7 @@
   "scripts": {
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
-    "start": "webpack serve --env port=3000",
+    "start": "webpack serve --env port=3002",
     "build:mobile": "webpack --env mode=production --env platform=mobile",
     "build:desktop": "webpack --env mode=production --env platform=desktop"
   }
